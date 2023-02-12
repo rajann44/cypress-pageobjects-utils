@@ -8,4 +8,5 @@ describe('template spec', () => {
     loginPage.login(loginCred.username, loginCred.password)
     cy.get('[class="flash success"]').should('be.visible')
   })
+  
 })
