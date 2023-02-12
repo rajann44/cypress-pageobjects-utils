@@ -12,6 +12,10 @@ class action {
         cy.get(locator).trigger("mouseover")
     }
 
+    scrollToElement(locator){
+        cy.get(locator).scrollIntoView()
+    }
+
 }
 
 export default new action();
