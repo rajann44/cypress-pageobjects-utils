@@ -8,6 +8,10 @@ class action {
         cy.get(locator).click()
     }
 
+    hoverOnElement(locator){
+        cy.get(locator).trigger("mouseover")
+    }
+
 }
 
 export default new action();
