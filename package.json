@@ -1,0 +1,11 @@
+{
+  "name": "cypress-pageobjects-utils",
+  "version": "1.0.0",
+  "description": "this project tries to give solution for pageobjects and utils",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rajan",
+  "license": "ISC"
+}
