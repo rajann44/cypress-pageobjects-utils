@@ -7,6 +7,8 @@
 // commands please read more here:
 // https://on.cypress.io/custom-commands
 // ***********************************************
+// type definitions for Cypress object "cy"
+/// <reference types="cypress" />
 //
 //
 // -- This is a parent command --
