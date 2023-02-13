@@ -16,6 +16,12 @@ class action {
         cy.get(locator).scrollIntoView()
     }
 
+    dragAndDrop(source, target){
+        const dataTransfer = new DataTransfer(); 
+        cy.get(source).trigger('dragstart',{dataTransfer})
+        cy.get(target).trigger('drop',{dataTransfer})
+    }
+
 }
 
 export default new action();
