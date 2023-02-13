@@ -1,11 +1,11 @@
-import amazonPage from "../pages/amazonPage"
-import action from "../utils/action"
+import AmazonPage from "../pages/AmazonPage"
+import action from "../utils/Action"
 
 describe('hover test', () => {
   it('hovering', () => {
-    amazonPage.open()
-    action.hoverOnElement(amazonPage.languageBtn)
-    cy.get(amazonPage.languageModal).should('be.visible')
+    AmazonPage.open()
+    action.hoverOnElement(AmazonPage.languageBtn)
+    cy.get(AmazonPage.languageModal).should('be.visible')
   })
   
 })

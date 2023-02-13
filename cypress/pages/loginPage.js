@@ -1,6 +1,6 @@
-import action from "../utils/action";
+import action from "../utils/Action";
 
-class loginPage {
+class LoginPage {
 
     username = "#username";
     password = "#password";
@@ -18,4 +18,4 @@ class loginPage {
 
 }
 
-export default new loginPage();
+export default new LoginPage();

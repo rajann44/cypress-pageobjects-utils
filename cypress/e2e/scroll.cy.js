@@ -1,11 +1,11 @@
-import amazonPage from "../pages/amazonPage"
-import action from "../utils/action"
+import AmazonPage from "../pages/AmazonPage"
+import action from "../utils/Action"
 
 describe('scroll test', () => {
   it('scrollingggggg', () => {
-    amazonPage.open()
-    action.scrollToElement(amazonPage.footer)
-    cy.get(amazonPage.footer).should('be.visible')
+    AmazonPage.open()
+    action.scrollToElement(AmazonPage.footer)
+    cy.get(AmazonPage.footer).should('be.visible')
   })
   
 })
