@@ -1,6 +1,6 @@
-import action from "../utils/action";
+import action from "../utils/Action";
 
-class amazonPage {
+class AmazonPage {
 
     languageBtn  = "[class='icp-nav-flag icp-nav-flag-in icp-nav-flag-discoverability-t1']";
     languageModal  = "#nav-flyout-icp";
@@ -12,4 +12,4 @@ class amazonPage {
 
 }
 
-export default new amazonPage();
+export default new AmazonPage();

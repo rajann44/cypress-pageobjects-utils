@@ -1,4 +1,4 @@
-class action {
+class Action {
 
     sendKeys(locator, value){
         cy.get(locator).type(value);
@@ -24,4 +24,4 @@ class action {
 
 }
 
-export default new action();
+export default new Action();
