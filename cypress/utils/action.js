@@ -1,6 +1,7 @@
 class Action {
 
     sendKeys(locator, value){
+        cy.get(locator).clear()
         cy.get(locator).type(value);
     }
 
@@ -20,6 +21,10 @@ class Action {
         const dataTransfer = new DataTransfer(); 
         cy.get(source).trigger('dragstart',{dataTransfer})
         cy.get(target).trigger('drop',{dataTransfer})
+    }
+
+    getAttributValue(locator, attibute){
+        return cy.get(locator).invoke('attr', attibute)
     }
 
 }
