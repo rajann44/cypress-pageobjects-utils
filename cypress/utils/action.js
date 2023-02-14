@@ -35,6 +35,10 @@ class Action {
         return cy.get(locator).invoke('attr', attibute)
     }
 
+    verifyTextIsPresentInLocator(locator, value){
+        cy.contains(locator, value)
+    }
+
 }
 
 export default new Action();
