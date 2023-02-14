@@ -1,5 +1,13 @@
 class Action {
 
+    navigateTo(url){
+        cy.visit(url)
+    }
+
+    browserRefresh(){
+        cy.reload()
+    }
+
     sendKeys(locator, value){
         cy.get(locator).clear()
         cy.get(locator).type(value);
