@@ -39,6 +39,10 @@ class Action {
         cy.contains(locator, value)
     }
 
+    sleepForSeconds(seconds){
+        cy.wait(seconds*1000)
+    }
+
 }
 
 export default new Action();
