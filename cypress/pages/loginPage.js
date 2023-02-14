@@ -7,7 +7,7 @@ class LoginPage {
     loginBtn = "[type='submit']";
 
     open(){
-        cy.visit('/login')
+        action.navigateTo('/login')
     }
 
     login(username, password){

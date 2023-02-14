@@ -7,7 +7,7 @@ class AmazonPage {
     footer  = "[class='navFooterLine navFooterLinkLine navFooterDescLine']";
 
     open(){
-        cy.visit('https://www.amazon.in/')
+        action.navigateTo('https://www.amazon.in/')
     }
 
 }
