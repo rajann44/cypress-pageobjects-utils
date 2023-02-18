@@ -9,7 +9,7 @@ Run all tests:
 <code>npx cypress run</code>
 
 Run single spec file:
-<code>npx cypress run --spec "cypress/e2e/list.cy.js"</code>
+<code>npx cypress run --spec "cypress/e2e/SPEC_FILE_NAME.cy.js"</code>
 
 Run spec folder:
 <code>npx cypress run --spec "cypress/e2e/FOLDER_NAME/*.cy.js"</code>
