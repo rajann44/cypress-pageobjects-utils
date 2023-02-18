@@ -1,5 +1,5 @@
-import AmazonPage from "../pages/AmazonPage"
-import action from "../utils/Action"
+import AmazonPage from "../../pages/AmazonPage"
+import action from "../../utils/Action"
 
 describe('hover test', () => {
   it('hovering', () => {

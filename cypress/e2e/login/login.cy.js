@@ -1,7 +1,7 @@
-import LoginPage from "../pages/LoginPage"
-import action from "../utils/Action"
+import LoginPage from "../../pages/LoginPage"
+import action from "../../utils/Action"
 
-const loginCred = require("../testData/loginCred")
+const loginCred = require("../../testData/loginCred")
 
 describe('template spec', () => {
   it('login', () => {

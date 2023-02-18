@@ -1,4 +1,4 @@
-import action from "../utils/Action"
+import action from "../../utils/Action"
 
 describe('drag n drop test', () => {
   it('drag n drop', () => {
