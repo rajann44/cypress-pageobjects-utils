@@ -4,7 +4,8 @@
   "description": "this project tries to give solution for pageobjects and utils",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:qa": "npx cypress run --spec 'cypress/e2e/fixtures.cy.js' --env base_url=qa"
   },
   "author": "rajan",
   "license": "ISC",
