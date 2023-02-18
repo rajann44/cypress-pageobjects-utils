@@ -13,9 +13,19 @@ module.exports = defineConfig({
     debug: false,
   },
   e2e: {
+
     setupNodeEvents(on, config) {
       require('cypress-mochawesome-reporter/plugin')(on);
+
+      switch(config.env.base_url) {
+        case 'qa':
+          return {baseUrl: "https://opensource-demo.orangehrmlive.com/"}
+        case 'dev':
+          return {baseUrl: "https://bing.com"}
+        default:
+          return {baseUrl: "https://the-internet.herokuapp.com"}
+      };
     },
-    baseUrl: 'https://the-internet.herokuapp.com/',
+
   },
 });
