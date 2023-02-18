@@ -19,4 +19,7 @@ How to pass baseUrl via CLI: (Logic Defined in cypress.config.js)<br>
 <code>npx cypress run --env base_url=ADD_BASEURL_SWITCH_HERE</code><br>
 <code>npx cypress run --spec "cypress/e2e/ok.cy.js" --env base_url=qa</code>
 
+Run Tests via custom command / script in CLI: (Logic Defined in package.json)<br>
+<code>npm run cy:qa</code>
+
 
