@@ -6,9 +6,13 @@ describe('drag n drop test', () => {
     action.dragAndDrop('#column-a','#column-b')
   })
 
-  it('drag n drop 2', () => {
+  it.only('drag n drop 2', () => {
     action.navigateTo('https://ui.vision/demo/webtest/dragdrop/')
-    action.dragAndDrop('[id="one"]','[id="bin"]')
+    cy.dragAndDrop('[id="one"]','[id="bin"]')
+    cy.dragAndDrop('[id="two"]','[id="bin"]')
+    cy.dragAndDrop('[id="three"]','[id="bin"]')
+    cy.dragAndDrop('[id="four"]','[id="bin"]')
+    cy.dragAndDrop('[id="five"]','[id="bin"]')
   })
   
   

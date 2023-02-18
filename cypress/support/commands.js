@@ -10,18 +10,9 @@
 // type definitions for Cypress object "cy"
 /// <reference types="cypress" />
 //
-//
-// -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
-//
-//
-// -- This is a child command --
-// Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
-//
-//
-// -- This is a dual command --
-// Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
-//
-//
-// -- This will overwrite an existing command --
-// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add("dragAndDrop", (source, target) => {
+    const dataTransfer = new DataTransfer(); 
+    cy.get(source).trigger('dragstart',{dataTransfer})
+    cy.get(target).trigger('drop',{dataTransfer})
+})
