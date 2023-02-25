@@ -31,14 +31,6 @@ class Action {
         cy.get(target).trigger('drop',{dataTransfer})
     }
 
-    getAttributValue(locator, attibute){
-        return cy.get(locator).invoke('attr', attibute)
-    }
-
-    verifyTextIsPresentInLocator(locator, value){
-        cy.contains(locator, value)
-    }
-
     sleepForSeconds(seconds){
         cy.wait(seconds*1000)
     }

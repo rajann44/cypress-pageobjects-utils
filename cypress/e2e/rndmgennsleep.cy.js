@@ -1,4 +1,4 @@
-import action from '../utils/Action';
+import Action from '../utils/Action';
 import randomgen from '../utils/RandomGenerator';
 
 describe('random number and sleep', () => {
@@ -9,7 +9,7 @@ describe('random number and sleep', () => {
       })
 
     it('sleep for seconds', () => {
-      action.sleepForSeconds(2)
+      Action.sleepForSeconds(2)
     })
 
 })
