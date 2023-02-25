@@ -1,20 +1,22 @@
 import LoginPage from "../../pages/LoginPage"
-import action from "../../utils/Action"
+import Action from "../../utils/Action"
+import Assert from "../../utils/Assert"
 
 const loginCred = require("../../testData/loginCred")
 
 describe('template spec', () => {
-  it('login', () => {
+  it.only('login', () => {
     LoginPage.open('/login')
     LoginPage.login(loginCred.username, loginCred.password)
-    cy.get('[class="flash success"]').should('be.visible')
+    //cy.get('[class="flash success"]').should('be.visible')
+    Assert.isVisible('[class="flash success"]');
   })
 
-  it.only('refresh browser', () => {
-    action.navigateTo('https://google.com')
-    action.browserRefresh()
-    action.browserRefresh()
-    action.browserRefresh()
+  it('refresh browser', () => {
+    Action.navigateTo('https://google.com')
+    Action.browserRefresh()
+    Action.browserRefresh()
+    Action.browserRefresh()
   })
   
 })

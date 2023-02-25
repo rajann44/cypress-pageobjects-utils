@@ -1,4 +1,4 @@
-import action from "../../utils/Action"
+import Action from "../../utils/Action"
 
 describe('login via api', () => {
 
@@ -7,15 +7,15 @@ describe('login via api', () => {
             email: 'gibeyi7348@iucake.com',
             password: 'Gibeyi7348@iucake.com',
         })
-        action.navigateTo('https://app.ninox.com/')
-        action.sleepForSeconds(2)
-        action.navigateTo('https://admin.ninox.com/profile')
-        action.sleepForSeconds(2)
+        Action.navigateTo('https://app.ninox.com/')
+        Action.sleepForSeconds(2)
+        Action.navigateTo('https://admin.ninox.com/profile')
+        Action.sleepForSeconds(2)
       })
 
     it('Complex API login', () => {
         // TODO: Implement this
-        action.navigateTo('app.timelyapp.com/')
+        Action.navigateTo('app.timelyapp.com/')
     })
 
 })

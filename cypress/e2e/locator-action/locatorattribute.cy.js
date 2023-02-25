@@ -1,10 +1,11 @@
-import action from "../../utils/Action"
+import Action from "../../utils/Action"
+import Assert from "../../utils/Assert"
 
 describe('validate attribute value', () => {
 
   it('locator attribute', () => {
-    action.navigateTo('https://the-internet.herokuapp.com/frames')
-    action.getAttributValue('[id="content"]','class').should('contain', 'large-12 columns')
+    Action.navigateTo('https://the-internet.herokuapp.com/frames')
+    Assert.isAttributeIsEqualTo('[id="content"]', 'class', 'large-12 columns')
   })
   
   
